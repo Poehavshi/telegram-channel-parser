@@ -1,4 +1,8 @@
+import os
+from dotenv import load_dotenv
 
-api_id = "13853576"
-api_hash = "0f694edce07138e62075121eba2a39dc"
-phone_number = "89277556011"
+load_dotenv()
+
+api_id = os.getenv("API_ID")
+api_hash = os.getenv("API_HASH")
+phone_number = os.getenv("PHONE_NUMBER")
